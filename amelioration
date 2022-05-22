@@ -1,0 +1,14 @@
+import pyautogui as ptg
+from random import randint
+import time
+import keyboard
+import os
+
+
+for i in range(10):
+    os.system('start')
+while True:
+    ptg.moveTo(randint(0,1920),randint(0,1080))
+    time.sleep(00.1)
+    if keyboard.is_pressed('r'):
+        break
